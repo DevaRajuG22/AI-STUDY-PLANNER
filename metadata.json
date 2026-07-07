@@ -1,0 +1,6 @@
+{
+  "name": "AI Study Planner",
+  "description": "An AI-powered Study Planner with task scheduling, habit tracking, reminders, and personalized dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Slate & Cool Gray Palette - premium off-whites and slate borders */
+  --color-slate-50: #fcfcfc;
+  --color-slate-100: #f4f4f5;
+  --color-slate-150: #e4e4e7;
+  --color-slate-200: #e4e4e7;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #71717a;
+  --color-slate-600: #52525b;
+  --color-slate-700: #27272a;
+  --color-slate-800: #18181b;
+  --color-slate-900: #09090b;
+
+  /* Indigo redefined as high-end minimalist deep charcoal/black */
+  --color-indigo-50: #f4f4f5;
+  --color-indigo-100: #e4e4e7;
+  --color-indigo-200: #d4d4d8;
+  --color-indigo-300: #a1a1aa;
+  --color-indigo-400: #71717a;
+  --color-indigo-500: #27272a;
+  --color-indigo-600: #18181b; /* main elegant charcoal solid background & text button */
+  --color-indigo-700: #09090b; /* hover state */
+  --color-indigo-800: #09090b;
+  --color-indigo-900: #09090b;
+  --color-indigo-950: #020202;
+}
+
+/* Custom visual refinements to enforce Clean Minimalism */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-slate-50);
+}
+
+/* Focus and input aesthetics */
+input, select, textarea {
+  font-family: var(--font-sans);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-slate-150);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-slate-300);
+}
